@@ -2,25 +2,33 @@
    CSS Variables for Theming
    ============================================ */
 :root {
-  --bg-primary: #f5f7fa;
+  --bg-primary: #f4f6fb;
   --bg-secondary: #ffffff;
-  --text-primary: #2d3748;
-  --text-secondary: #4a5568;
-  --accent: #4299e1;
-  --accent-hover: #3182ce;
-  --border: #e2e8f0;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --success: #48bb78;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  --accent: #7c3aed;        
+  --accent-hover: #5b21b6;  
+
+  --border: #e5e7eb;
+  --shadow: rgba(0, 0, 0, 0.12);
+
+
+  --success: #22c55e;
+
   --transition: 0.3s ease;
 }
 
 [data-theme="dark"] {
-  --bg-primary: #1a202c;
-  --bg-secondary: #2d3748;
-  --text-primary: #f7fafc;
-  --text-secondary: #e2e8f0;
-  --border: #4a5568;
-  --shadow: rgba(0, 0, 0, 0.3);
+  --bg-primary: #0b1020;
+  --bg-secondary: #141a32;
+
+  --text-primary: #f9fafb;
+  --text-secondary: #c7d2fe;
+
+  --border: #2e3a8c;
+  --shadow: rgba(0, 0, 0, 0.45);
 }
 
 /* ============================================
