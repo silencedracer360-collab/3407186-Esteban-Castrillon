@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestor de Mensajes Urbanos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📱 Gestor de Mensajes Urbanos</h1>
+    <p class="subtitle">Comunicación rápida y organizada en la ciudad</p>
+
+    <!-- FORMULARIO -->
+    <form id="item-form" class="card">
+      <h2>Crear nuevo mensaje</h2>
+
+      <label for="item-name">Título del mensaje *</label>
+      <input 
+        type="text" 
+        id="item-name" 
+        placeholder="Ej: Accidente en la Av. 30" 
+        required 
+      />
+
+      <label for="item-description">Contenido del mensaje</label>
+      <textarea 
+        id="item-description" 
+        placeholder="Describe la situación..."
+      ></textarea>
+
+      <label for="item-category">Tipo de mensaje</label>
+      <select id="item-category">
+        <option value="traffic">🚦 Tránsito</option>
+        <option value="delivery">📦 Entrega</option>
+        <option value="emergency">🚨 Emergencia</option>
+        <option value="community">🏘️ Comunidad</option>
+      </select>
+
+      <label for="item-priority">Urgencia</label>
+      <select id="item-priority">
+        <option value="low">Baja</option>
+        <option value="medium">Media</option>
+        <option value="high">Alta</option>
+      </select>
+
+      <button class="btn" type="submit">Enviar mensaje</button>
+    </form>
+
+    <!-- LISTA -->
+    <section class="card">
+      <h2>Mensajes publicados</h2>
+      <ul id="item-list"></ul>
+    </section>
+  </div>
+
+  <script src="starter/script.js"></script>
+</body>
+</html>
